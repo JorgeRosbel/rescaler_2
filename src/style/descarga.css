@@ -1,0 +1,82 @@
+.output
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    color:#fff;
+    background-color: #131324;
+    border-radius: 8px;
+    font-size: 20px;
+    transition: all 300ms ease;
+    width: 80%;
+}
+
+
+.output-container .output:nth-child(3n-2) 
+{
+    animation: present 2s ease 0.3s;
+}
+  
+.output-container .output:nth-child(3n-1)
+{
+    animation: present 2s ease 0.62s;
+}
+  
+.output-container .output:nth-child(3n)
+{
+    animation: present 2s ease 1s;
+}
+
+@keyframes present {
+    from{
+        opacity: 0.3;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+.procesadas-title
+{
+    color: #000;
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+.output:hover
+{
+    transition: 300ms ease;
+    box-shadow: 2px 5px 30px hsla(33, 100%, 53%, 1);
+}
+
+.output a{
+    text-decoration: none;
+    color:hsla(33, 100%, 53%, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+}
+
+.output a:hover{
+   transition: 300ms ease;
+   text-shadow: hsla(33, 100%, 53%, 1);
+}
+
+.output-container
+{
+    display: flex;
+    align-items: center;
+    gap:8px;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    min-width: 500px;
+    max-height: 500px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+

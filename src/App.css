@@ -1,0 +1,172 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+::placeholder{
+  font-size: 15px;
+  font-weight: bold;
+}
+
+html,
+body
+{
+  background-color: #131324;
+  color:#fff;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+.home
+{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+h1
+{
+  font-size: 50px;
+}
+
+
+/* Seccion Home */
+
+.home .home-container .home-text-container
+{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap:20px;
+}
+
+.home .home-container
+{
+  width: 1200px;
+  max-width: 1200px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap:20px;
+}
+
+.home .home-container .home-text
+{
+  width: 80%;
+  font-size: 25px;
+}
+
+.home .home-container .home-text .home-text-o
+{
+  opacity: 0.6;
+  font-size: 18px;
+}
+
+
+
+.home .home-emotes
+{
+  display: flex;
+  gap:5px;
+}
+
+.home .home-emotes .emote-h
+{
+  width: 130px;
+}
+
+.start-btn
+{
+  font-size: 23px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #ec6110;
+  background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, rgb(206, 200, 28) 100%);
+  margin: 20px 0 0 0;
+}
+
+
+
+
+.start-btn:hover
+{
+  transition: 200ms ease;
+  box-shadow: 2px 5px 15px hsla(33, 100%, 53%, 1);
+}
+
+
+@media (width<973px) {
+  .home .home-container
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:40px
+  }
+}
+
+
+/* Seccion rescaler */
+
+.app-rescaler{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:30px;
+}
+
+.app-rescaler-container
+{
+  width: 1200px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  min-height: 80vh;
+  padding: 40px;
+  background-color: rgba(14, 13, 13, 0.404);
+  backdrop-filter: blur(8px);
+  flex-direction: row;
+  gap:20px
+}
+
+
+
+
+
+
+
+
+.display-img
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.display-img .display{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 1200px;
+}
+
+.display-img .display img{
+  width: 300px;
+}

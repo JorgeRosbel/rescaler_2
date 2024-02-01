@@ -1,0 +1,178 @@
+.form-app
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 500px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+
+.form-title{
+    color: #000;
+    margin: 0 0 30px 0;
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2px;
+}
+
+.form-title-ico
+{
+    font-size: 30px;
+}
+
+
+.form-app .input-number
+{
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 20px;
+    transition: all 300ms ease;
+    cursor: pointer;
+    font-weight: 500;
+    width: 150px;
+    border-radius: 5px;
+    border: solid 2px #00000046;
+    outline: none;
+    margin: 0 0 10px 0;
+    border-bottom:solid 3px #00000075;
+    text-align: center;
+}
+
+.form-app .input-number:focus{
+    transition: 300ms ease;
+    border: solid 2px #068038;
+    border-bottom:solid 3px #068038;
+}
+
+
+.input-title
+{
+    color:#000;
+    font-weight: 700;
+    font-size: 14px;
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    gap:2px;
+}
+
+.input-ico
+{
+    font-size: 23px;
+}
+
+
+.input-box
+{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 8px 0;
+}
+
+
+.submit-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+    padding: 8px 12px;
+    font-size: 18px;
+    width: 150px;
+    cursor: pointer;
+    font-weight: 600;
+    background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, rgb(206, 200, 28) 100%);
+    border: none;
+    border-radius: 5px;
+    margin: 60px 0 0 0;
+}
+
+.submit-btn:hover
+{
+    transition: 200ms ease;
+    box-shadow: 2px 5px 10px #000;
+}
+
+
+
+.submit-btn:active
+{
+    transition: 200ms ease;
+    opacity: .5;
+}
+
+
+
+
+.input-imagen
+{
+    color:#000;
+    background: linear-gradient(90deg, hsla(33, 100%, 53%, 1) 0%, rgb(206, 200, 28) 100%);
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 15px;
+    width: 230px;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.input-imagen.hidden
+{
+    display: none;
+}
+
+
+.input-img-box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    margin: 30px 0 0;
+}
+
+.input-img-box .num-file
+{
+    color:#000;
+    padding: 5px 8px;
+    border-bottom: solid 3px #0000005e;
+    font-weight: 600;
+}
+
+
+.msg
+{
+    color:#0ba105;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3px;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.msg.visible
+{
+    opacity: 1;
+    transition: all 300ms ease;
+}
+
+
+@media (width < 900px) {
+    .app-rescaler-container
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

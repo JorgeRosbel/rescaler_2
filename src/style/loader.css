@@ -1,0 +1,49 @@
+.loader
+{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top:100px;
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.load-text
+{
+    font-size: 20px;
+    font-weight: 600;
+    animation: big 1s ease infinite;
+}
+
+@keyframes big {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+
+
+
+.loader::after{
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    border: solid 20px  #121312;
+    border-top: solid 20px hsla(33, 100%, 53%, 1);
+    border-radius: 50%;
+    animation: loading 0.75s ease infinite ;
+}
+
+@keyframes loading {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
